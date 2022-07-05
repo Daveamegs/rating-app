@@ -67,10 +67,6 @@
   cursor: pointer;
 }
 
-/* .rate-nums input[type=button] .active{
-  background-color:hsl(217, 12%, 63%);
-  color:hsl(0, 0%, 100%);
-} */
 .active{
   background-color: hsla(216, 12%, 54%, 0.8) !important;
   color:hsl(0, 0%, 100%) !important;
