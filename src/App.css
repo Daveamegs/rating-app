@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(213, 19%, 18%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.star{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:hsla(216, 12%, 54%, 0.1);
+  border: none;
+}
+
+.statement > p{
+  font-size: 15px;
+  margin-top: 10px;
+  /* font-weight: 400; */
+}
+
+.header{
+  font-weight: 700;
+}
+
+.rate-nums{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.rate-nums input[type=button]{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  appearance: none;
+  background-color:hsla(216, 12%, 54%, 0.2);
+  color: hsl(217, 12%, 63%)!important;
+}
+
+.rate-nums input[type=button]:hover{
+  background-color:hsl(25, 97%, 53%);
+  color:hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+/* .rate-nums input[type=button] .active{
+  background-color:hsl(217, 12%, 63%);
+  color:hsl(0, 0%, 100%);
+} */
+.active{
+  background-color: hsla(216, 12%, 54%, 0.8) !important;
+  color:hsl(0, 0%, 100%) !important;
+  font-weight: 400;
+}
+
+.btn-submit{
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.btn-submit:hover{
+  background-color:hsl(0, 0%, 100%);
+  color:hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+/* Thank You Components Styling */
+.items-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.selected--text{
+  background-color: hsla(216, 12%, 54%, 0.2);
+  padding: 5px 20px;
+  margin-top: 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  color:hsl(25, 97%, 53%)
+}
+
+@media only screen and (max-width: 280px) {
+  .card{
+    width: 250px;
+    height: 300px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
