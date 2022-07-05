@@ -8,7 +8,7 @@ function App() {
   const [submit, setSubmit] = useState(false);
 
   return (
-    <div className="container">
+    <main className="container">
       {!submit ? (
         <RateUs
           // rating={rating}
@@ -18,7 +18,7 @@ function App() {
       ) : (
         <ThankYou rating={rating} />
       )}
-    </div>
+    </main>
   );
 }
 
